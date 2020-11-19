@@ -3,16 +3,13 @@ def print_number():
    start=int(input("Enter Start Number:"))
    end=int(input("Enter End Number:"))
 
-   
-   for start in range(start,end+1):
-      if start % 2 == 0:
-         print(f'{start}')
-
-          
-   for end in range(start,end+1):
-      if end % 2 != 0:
-         print (f'{start}')
-
-
+   for number in range(start,end+1):
+      if number % 2 == 0:
+         print (number,"Even Number")
+   print("----------")
+   for number in range(start,end+1):
+      if number % 2 != 0:
+         print (number,"Odd Number")
 
 print_number()
+
